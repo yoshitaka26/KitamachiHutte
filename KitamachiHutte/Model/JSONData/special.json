@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "imageName": "bento1",
+        "caption": "京風弁当",
+        "text": "京風な味付けが特徴の弁当",
+        "category": "New",
+        "isFeatured": true,
+    },
+    {
+        "id": "2",
+        "imageName": "bento2",
+        "caption": "フライと刺身弁当",
+        "text": "揚げ物とお刺身が特徴の弁当",
+        "category": "New",
+        "isFeatured": true,
+    },
+    {
+        "id": "3",
+        "imageName": "bento3",
+        "caption": "海老弁当",
+        "text": "大きなエビが特徴の弁当",
+        "category": "New",
+        "isFeatured": true,
+    },
+    {
+        "id": "4",
+        "imageName": "bento4",
+        "caption": "そば弁当",
+        "text": "おそばがメインのお弁当",
+        "category": "Sale",
+        "isFeatured": true,
+    },
+    {
+        "id": "5",
+        "imageName": "bento5",
+        "caption": "海鮮弁当",
+        "text": "お刺身がたっぷり入ったお弁当",
+        "category": "Sale",
+        "isFeatured": true,
+    },
+    {
+        "id": "6",
+        "imageName": "bento6",
+        "caption": "揚げ物弁当",
+        "text": "揚げ物たっぷりのお弁当",
+        "category": "Sale",
+        "isFeatured": true,
+    },
+    {
+        "id": "7",
+        "imageName": "food1",
+        "caption": "季節のご飯",
+        "text": "秋の味覚たっぷり",
+        "category": "Featured",
+        "isFeatured": false,
+    }
+]
