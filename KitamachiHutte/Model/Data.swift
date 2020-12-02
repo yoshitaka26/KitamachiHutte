@@ -1,7 +1,7 @@
 import Foundation
 
 class OrderStore: ObservableObject {
-    @Published var orders: [OrderEntity] = []
+    @Published var orders: [ReservationData] = []
 }
 
 //struct OrderStore {

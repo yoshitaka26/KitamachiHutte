@@ -29,7 +29,7 @@ struct HomeView: View {
                 }
             }
             .navigationBarTitle(Text("メニュー"), displayMode: .inline)
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

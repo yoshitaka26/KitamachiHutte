@@ -12,6 +12,7 @@ struct ContentView: View {
     
     @State var selection = 0
     
+    @ViewBuilder
     var body: some View {
         TabView(selection: $selection) {
             HomeView()
@@ -32,6 +33,13 @@ struct ContentView: View {
                     Text("予約")
             }.tag(2)
             
+            if GlobalSetting.reservationName == "オーナー管理画面へ移動" {
+                OwnerView()
+                    .tabItem {
+                        Image(systemName: "person")
+                        Text("予約管理")
+                    }
+            }
         }
 //        .edgesIgnoringSafeArea(.top)
     }

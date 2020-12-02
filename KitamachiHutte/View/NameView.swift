@@ -29,6 +29,7 @@ struct NameView: View {
             
             Button(action: {
                 GlobalSetting.reservationName = name
+//                GlobalSetting.reservationID = ""
                 self.isSave = true
             }) {
                 Text("登録")

@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct ReservationDetail: View {
     
@@ -24,6 +25,7 @@ struct ReservationDetail: View {
     
     @State private var toSave = false
     @State private var isSave = false
+    @State private var isfailed = false
     
     @Binding var selection: Int
     
@@ -33,8 +35,13 @@ struct ReservationDetail: View {
     let dateRange: ClosedRange<Date> = {
         let calendar = Calendar.current
         var dayComponent = DateComponents()
-        var startComponents = Calendar.current.dateComponents([.year, .month, .day], from: Date())
-        dayComponent.day = 7
+        var todayComponents = Calendar.current.dateComponents([.year, .month, .day], from: Date())
+        
+        dayComponent.day = 200
+        let startfixed = calendar.date(byAdding: dayComponent, to: Date())
+        let startComponents = Calendar.current.dateComponents([.year, .month, .day], from: startfixed!)
+        
+        dayComponent.day = 207
         let endfixed = calendar.date(byAdding: dayComponent, to: Date())
         let endComponents = Calendar.current.dateComponents([.year, .month, .day], from: endfixed!)
         return calendar.date(from:startComponents)!
@@ -107,7 +114,15 @@ struct ReservationDetail: View {
                 Alert(
                     title: Text("予約しますか？"),
                     message: Text(""),
-                    primaryButton: .default(Text("確定"), action: { self.save()}),
+                    primaryButton: .default(Text("確定"), action: {
+                        if GlobalSetting.reservationID == "" {
+                            self.save()
+                        } else {
+                            DispatchQueue.main.asyncAfter(deadline: .now()) {
+                                self.isfailed = true
+                            }
+                        }
+                    }),
                     secondaryButton: .cancel(Text("キャンセル")))
             }
             
@@ -117,13 +132,30 @@ struct ReservationDetail: View {
                     message: Text(""),
                     dismissButton: .default(Text("確認")))
             }
-        }
+            
+            Spacer().alert(isPresented: $isfailed) {
+                Alert(
+                    title: Text("すでに予約が存在します"),
+                    message: Text("変更希望の場合は一度予約取消をお願い致します。"),
+                    dismissButton: .default(Text("確認")))
+            }
+        }.onAppear(perform: {
+            let calendar = Calendar.current
+            var dayComponent = DateComponents()
+            
+            dayComponent.day = 200
+            let startfixed = calendar.date(byAdding: dayComponent, to: Date())
+            selectionDate = startfixed!
+        })
     }
     
     private func save() {
         let newID = UUID().uuidString
+        let name = GlobalSetting.reservationName
         
-        orderStore.orders.append(OrderEntity(id: newID, date: selectionDate, hour: reservationHour, number: reservation + 1, menu: orderCourse, other: other, name: "ゲスト"))
+        let newData = OrderEntity(id: newID, date: selectionDate, hour: reservationHour, number: reservation + 1, menu: orderCourse, other: other, name: name)
+        
+        saveToFirebase(newData: newData)
         
         GlobalSetting.reservationID = newID
         
@@ -140,6 +172,27 @@ struct ReservationDetail: View {
         reservation = 0
         orderCourse = 0
         other = ""
+    }
+    
+    private func saveToFirebase(newData: OrderEntity) {
+        let db = Firestore.firestore()
+        
+        db.collection("reservation").addDocument(data: [
+            "id": newData.id,
+            "name": newData.name,
+            "date": newData.dateForShow,
+            "hour": newData.hourDetail,
+            "number": newData.number,
+            "menu": newData.menuDetail,
+            "other": newData.other,
+            "dateForOrder": newData.date
+        ]) { (error) in
+            if error != nil {
+                print("There was an issue saving data to firestore")
+            } else {
+                print("Successfully saved data")
+            }
+        }
     }
 }
 
