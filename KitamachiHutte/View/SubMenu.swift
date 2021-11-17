@@ -11,6 +11,7 @@ import SwiftUI
 struct SubMenu: View {
     @State var moveToNameView = false
     @State var moveToMyReservationView = false
+    @State var moveToOwnerView = false
     
     @Binding var selection: Int
     
@@ -25,18 +26,24 @@ struct SubMenu: View {
                         EmptyView()
                     }
                     
+                    NavigationLink(destination: OwnerView(), isActive: self.$moveToOwnerView) {
+                        EmptyView()
+                    }
+                    
                     Button(action: {
                         self.moveToNameView = true
                     }) {
                         Text("名前を登録")
-                        .padding(.vertical, 20)
+                            .padding(.vertical, 20)
                     }
                     
                     Button(action: {
+                        
                         self.moveToMyReservationView = true
+                        
                     }) {
                         Text("予約状況の確認")
-                        .padding(.vertical, 20)
+                            .padding(.vertical, 20)
                     }
                     
                     Spacer()
@@ -44,6 +51,7 @@ struct SubMenu: View {
                 .padding()
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

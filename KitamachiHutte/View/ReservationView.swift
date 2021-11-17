@@ -42,7 +42,7 @@ struct ReservationView: View {
                         .navigationBarItems(leading: Button(action: {
                             self.toggleHamburgerMenu()
                         }) {
-                            Image(systemName: "list.dash")
+                            Image(systemName: "calendar")
                         })
                     
                     SubMenu(selection: $selection)
@@ -55,6 +55,7 @@ struct ReservationView: View {
                         .animation(.default)
                 }
             }
+            .navigationViewStyle(StackNavigationViewStyle())
             .onAppear {
                 self.keyboard.startObserve()
             }.onDisappear {

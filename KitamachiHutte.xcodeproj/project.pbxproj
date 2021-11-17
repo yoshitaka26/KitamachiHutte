@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADAAF82AE765818A8BDCC464 /* Pods_KitamachiHutte.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E32C2FC74658F709816F42C1 /* Pods_KitamachiHutte.framework */; };
 		E4336FB425622AFA003F03C8 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4336FB325622AFA003F03C8 /* KeyboardObserver.swift */; };
 		E4336FB625624EC8003F03C8 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4336FB525624EC8003F03C8 /* PageView.swift */; };
 		E4336FB925625941003F03C8 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4336FB725625941003F03C8 /* PageViewController.swift */; };
@@ -18,6 +19,9 @@
 		E436B7A1255E090F0043CA82 /* Special.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436B79F255E090F0043CA82 /* Special.swift */; };
 		E436B7A5255E38A50043CA82 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436B7A4255E38A50043CA82 /* CategoryRow.swift */; };
 		E436B7A9255E3E230043CA82 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436B7A8255E3E230043CA82 /* HomeView.swift */; };
+		E43A6571257347D6008AF4C8 /* ReservationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A6570257347D6008AF4C8 /* ReservationData.swift */; };
+		E43A6575257363C3008AF4C8 /* OwnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A6574257363C3008AF4C8 /* OwnerView.swift */; };
+		E43A657E257366DB008AF4C8 /* OwnerViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A657D257366DB008AF4C8 /* OwnerViewRow.swift */; };
 		E44037672565F43500A33BF3 /* ReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44037662565F43500A33BF3 /* ReservationView.swift */; };
 		E440376B25661BC400A33BF3 /* SubMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440376A25661BC400A33BF3 /* SubMenu.swift */; };
 		E440376F256631B700A33BF3 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440376E256631B700A33BF3 /* NameView.swift */; };
@@ -31,13 +35,16 @@
 		E4428D37255CD18800F9C1D1 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428D36255CD18800F9C1D1 /* UserDefault.swift */; };
 		E4428D3B255CE4F200F9C1D1 /* OrderEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428D38255CE4F200F9C1D1 /* OrderEntity.swift */; };
 		E4428D3C255CE4F200F9C1D1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428D39255CE4F200F9C1D1 /* Data.swift */; };
-		E4428D3D255CE4F200F9C1D1 /* orderEntity.json in Resources */ = {isa = PBXBuildFile; fileRef = E4428D3A255CE4F200F9C1D1 /* orderEntity.json */; };
+		E49EEFAB257297F400C44D68 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E49EEFAA257297F400C44D68 /* GoogleService-Info.plist */; };
 		E4C95CC62564D4D60094AC7A /* HuttePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C95CC52564D4D60094AC7A /* HuttePage.swift */; };
 		E4C95CC8256506480094AC7A /* BentoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C95CC7256506480094AC7A /* BentoView.swift */; };
 		E4DE04D62570CB5000910FE1 /* MyReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DE04D52570CB5000910FE1 /* MyReservationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		653E626EF4265EE71569448E /* Pods-KitamachiHutte.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitamachiHutte.debug.xcconfig"; path = "Target Support Files/Pods-KitamachiHutte/Pods-KitamachiHutte.debug.xcconfig"; sourceTree = "<group>"; };
+		7FD5F7C7DCD7BE1031FA2116 /* Pods-KitamachiHutte.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitamachiHutte.release.xcconfig"; path = "Target Support Files/Pods-KitamachiHutte/Pods-KitamachiHutte.release.xcconfig"; sourceTree = "<group>"; };
+		E32C2FC74658F709816F42C1 /* Pods_KitamachiHutte.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KitamachiHutte.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4336FB325622AFA003F03C8 /* KeyboardObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
 		E4336FB525624EC8003F03C8 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		E4336FB725625941003F03C8 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +56,9 @@
 		E436B79F255E090F0043CA82 /* Special.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Special.swift; sourceTree = "<group>"; };
 		E436B7A4255E38A50043CA82 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		E436B7A8255E3E230043CA82 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E43A6570257347D6008AF4C8 /* ReservationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationData.swift; sourceTree = "<group>"; };
+		E43A6574257363C3008AF4C8 /* OwnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerView.swift; sourceTree = "<group>"; };
+		E43A657D257366DB008AF4C8 /* OwnerViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerViewRow.swift; sourceTree = "<group>"; };
 		E44037662565F43500A33BF3 /* ReservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationView.swift; sourceTree = "<group>"; };
 		E440376925660AFD00A33BF3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E440376A25661BC400A33BF3 /* SubMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenu.swift; sourceTree = "<group>"; };
@@ -64,7 +74,7 @@
 		E4428D36255CD18800F9C1D1 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		E4428D38255CE4F200F9C1D1 /* OrderEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderEntity.swift; sourceTree = "<group>"; };
 		E4428D39255CE4F200F9C1D1 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		E4428D3A255CE4F200F9C1D1 /* orderEntity.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = orderEntity.json; sourceTree = "<group>"; };
+		E49EEFAA257297F400C44D68 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E4C95CC52564D4D60094AC7A /* HuttePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuttePage.swift; sourceTree = "<group>"; };
 		E4C95CC7256506480094AC7A /* BentoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BentoView.swift; sourceTree = "<group>"; };
 		E4DE04D52570CB5000910FE1 /* MyReservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReservationView.swift; sourceTree = "<group>"; };
@@ -75,17 +85,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADAAF82AE765818A8BDCC464 /* Pods_KitamachiHutte.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D4C137334FA450067320314F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E32C2FC74658F709816F42C1 /* Pods_KitamachiHutte.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D89C2102712EA7C45533E609 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				653E626EF4265EE71569448E /* Pods-KitamachiHutte.debug.xcconfig */,
+				7FD5F7C7DCD7BE1031FA2116 /* Pods-KitamachiHutte.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E4428D16255CC05200F9C1D1 = {
 			isa = PBXGroup;
 			children = (
 				E4428D21255CC05200F9C1D1 /* KitamachiHutte */,
 				E4428D20255CC05200F9C1D1 /* Products */,
+				D89C2102712EA7C45533E609 /* Pods */,
+				D4C137334FA450067320314F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +138,7 @@
 				E4428D28255CC05700F9C1D1 /* Assets.xcassets */,
 				E4428D2D255CC05700F9C1D1 /* LaunchScreen.storyboard */,
 				E4428D30255CC05700F9C1D1 /* Info.plist */,
+				E49EEFAA257297F400C44D68 /* GoogleService-Info.plist */,
 				E4428D2A255CC05700F9C1D1 /* Preview Content */,
 			);
 			path = KitamachiHutte;
@@ -127,6 +158,7 @@
 				E436B79F255E090F0043CA82 /* Special.swift */,
 				E4428D39255CE4F200F9C1D1 /* Data.swift */,
 				E4428D38255CE4F200F9C1D1 /* OrderEntity.swift */,
+				E43A6570257347D6008AF4C8 /* ReservationData.swift */,
 				E45A6B57256E921200B619EA /* JSONData */,
 			);
 			path = Model;
@@ -149,6 +181,8 @@
 				E440376A25661BC400A33BF3 /* SubMenu.swift */,
 				E440376E256631B700A33BF3 /* NameView.swift */,
 				E4DE04D52570CB5000910FE1 /* MyReservationView.swift */,
+				E43A6574257363C3008AF4C8 /* OwnerView.swift */,
+				E43A657D257366DB008AF4C8 /* OwnerViewRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,7 +202,6 @@
 			isa = PBXGroup;
 			children = (
 				E436B79E255E090F0043CA82 /* special.json */,
-				E4428D3A255CE4F200F9C1D1 /* orderEntity.json */,
 			);
 			path = JSONData;
 			sourceTree = "<group>";
@@ -180,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4428D33255CC05700F9C1D1 /* Build configuration list for PBXNativeTarget "KitamachiHutte" */;
 			buildPhases = (
+				34D85A5032D9C90BDAAB49E1 /* [CP] Check Pods Manifest.lock */,
 				E4428D1B255CC05200F9C1D1 /* Sources */,
 				E4428D1C255CC05200F9C1D1 /* Frameworks */,
 				E4428D1D255CC05200F9C1D1 /* Resources */,
+				58B5F357BEADC9357B7087B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,14 +268,56 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4428D2F255CC05700F9C1D1 /* LaunchScreen.storyboard in Resources */,
-				E4428D3D255CE4F200F9C1D1 /* orderEntity.json in Resources */,
 				E436B7A0255E090F0043CA82 /* special.json in Resources */,
 				E4428D2C255CC05700F9C1D1 /* Preview Assets.xcassets in Resources */,
 				E4428D29255CC05700F9C1D1 /* Assets.xcassets in Resources */,
+				E49EEFAB257297F400C44D68 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34D85A5032D9C90BDAAB49E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KitamachiHutte-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58B5F357BEADC9357B7087B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KitamachiHutte/Pods-KitamachiHutte-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KitamachiHutte/Pods-KitamachiHutte-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KitamachiHutte/Pods-KitamachiHutte-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E4428D1B255CC05200F9C1D1 /* Sources */ = {
@@ -251,6 +328,7 @@
 				E4428D37255CD18800F9C1D1 /* UserDefault.swift in Sources */,
 				E440376F256631B700A33BF3 /* NameView.swift in Sources */,
 				E436B7A9255E3E230043CA82 /* HomeView.swift in Sources */,
+				E43A6571257347D6008AF4C8 /* ReservationData.swift in Sources */,
 				E436B7A5255E38A50043CA82 /* CategoryRow.swift in Sources */,
 				E4DE04D62570CB5000910FE1 /* MyReservationView.swift in Sources */,
 				E4336FB625624EC8003F03C8 /* PageView.swift in Sources */,
@@ -263,8 +341,10 @@
 				E4C95CC8256506480094AC7A /* BentoView.swift in Sources */,
 				E4336FB925625941003F03C8 /* PageViewController.swift in Sources */,
 				E4336FB425622AFA003F03C8 /* KeyboardObserver.swift in Sources */,
+				E43A657E257366DB008AF4C8 /* OwnerViewRow.swift in Sources */,
 				E440376B25661BC400A33BF3 /* SubMenu.swift in Sources */,
 				E44037672565F43500A33BF3 /* ReservationView.swift in Sources */,
+				E43A6575257363C3008AF4C8 /* OwnerView.swift in Sources */,
 				E4336FBC25625C4D003F03C8 /* TextOverlay.swift in Sources */,
 				E4428D25255CC05200F9C1D1 /* SceneDelegate.swift in Sources */,
 				E436B7A1255E090F0043CA82 /* Special.swift in Sources */,
@@ -407,9 +487,11 @@
 		};
 		E4428D34255CC05700F9C1D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 653E626EF4265EE71569448E /* Pods-KitamachiHutte.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"KitamachiHutte/Preview Content\"";
 				DEVELOPMENT_TEAM = VKV3Y2GW5Q;
 				ENABLE_PREVIEWS = YES;
@@ -418,6 +500,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yoshitaka.KitamachiHutte;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -427,9 +510,11 @@
 		};
 		E4428D35255CC05700F9C1D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD5F7C7DCD7BE1031FA2116 /* Pods-KitamachiHutte.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"KitamachiHutte/Preview Content\"";
 				DEVELOPMENT_TEAM = VKV3Y2GW5Q;
 				ENABLE_PREVIEWS = YES;
@@ -438,6 +523,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yoshitaka.KitamachiHutte;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

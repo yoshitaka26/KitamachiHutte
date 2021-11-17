@@ -29,4 +29,7 @@ enum GlobalSetting {
     
     @UserDefault(key: "reservationID", defaultValue: "")
     static var reservationID: String
+    
+    @UserDefault(key: "documentID", defaultValue: "")
+    static var documentID: String
 }

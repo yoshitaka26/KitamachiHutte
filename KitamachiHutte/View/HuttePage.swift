@@ -23,7 +23,7 @@ struct HuttePage: View {
         NavigationView {
             ScrollView {
                 VStack {
-                    MapView(location: location).edgesIgnoringSafeArea(.init())
+//                    MapView(location: location).edgesIgnoringSafeArea(.init())
                     
                     Image("hutte")
                         .resizable()
@@ -31,18 +31,15 @@ struct HuttePage: View {
                         .clipped()
                         .padding(.top, -60)
                     
-                    Image("kanban")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .clipShape(Rectangle())
-                        .overlay(Rectangle().stroke(liner, lineWidth: 13))
-                        .padding(.top, -30)
+                    Text("2021年春オープン予定")
+                        .font(.largeTitle)
+                        .bold()
+                        
                     
-                    Text("")
                 }
             }
             .navigationBarTitle("お店情報")
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

@@ -11,8 +11,8 @@ struct Special : Hashable, Codable, Identifiable {
     public var isFeatured: Bool                  // おすすめ
     
     enum Category: String, CaseIterable, Codable, Hashable {
-        case new = "New"            // 新商品
-        case sale = "Sale"          // 割引販売
-        case featured = "Featured"  // おすすめ
+        case new = "本日のおすすめ"            // 新商品
+        case sale = "旬の食材"          // 割引販売
+        case featured = "日本酒に合う"  // おすすめ
     }
 }

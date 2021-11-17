@@ -14,7 +14,7 @@ struct SpecialCard: View {
     var body: some View {
         self.special.image
             .resizable()
-            .aspectRatio(contentMode: .fill)
+            .aspectRatio(contentMode: .fit)
             .frame(height: 280)
             .overlay(TextOverlay(special: self.special))
             .clipped()
