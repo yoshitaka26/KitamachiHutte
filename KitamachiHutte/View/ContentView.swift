@@ -33,7 +33,7 @@ struct ContentView: View {
                     Text("予約")
             }.tag(2)
             
-            if GlobalSetting.reservationName == "オーナー管理画面へ移動" {
+            if GlobalSetting.reservationName == "オーナー管理画面" {
                 OwnerView()
                     .tabItem {
                         Image(systemName: "person")
